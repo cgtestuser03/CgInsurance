@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LoginFragment">
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.capg.insurance.ui.view.LoginFragment"
+        android:label="@string/login_fragment_label"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_LoginFragment_to_ListFragment"
+            app:destination="@id/ListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ListFragment"
+        android:name="com.capg.insurance.ui.view.ListFragment"
+        android:label="@string/list_fragment_label"
+        tools:layout="@layout/fragment_list">
+
+        <action
+            android:id="@+id/action_ListFragment_to_NewFormFragment"
+            app:destination="@id/NewFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/NewFormFragment"
+        android:name="com.capg.insurance.ui.view.NewFormFragment"
+        android:label="@string/new_fragment_label"
+        tools:layout="@layout/fragment_new">
+
+        <action
+            android:id="@+id/action_NewFormFragment_to_ListFragment"
+            app:destination="@id/ListFragment" />
+    </fragment>
+</navigation>
