@@ -3,12 +3,32 @@
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="login_fragment_label">Login</string>
-    <string name="list_fragment_label">Insurance List</string>
-    <string name="new_fragment_label">New Insurance</string>
+    <string name="list_fragment_label">Quotes List</string>
+    <string name="home_fragment_label">Home screen</string>
+    <string name="new_fragment_label">Form screen</string>
     <string name="login">Login</string>
     <string name="submit">Submit</string>
     <string name="next">Next</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="h_offer"><b><font color='#00BFFF'>\u20B91 Crore</font></b> life cover \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 at just <b><font color='#00BFFF'>\u20B9 490/months* </font></b></string>
+
+    <string name="h_instruction">By clicking on "View free quotes", you agree to our <font color='#00BFFF'> privacy policy &amp; Terms of use </font></string>
+    <string name="h_car">Car number</string>
+    <string name="h_insurance">Term Insurance</string>
+    <string name="h_name">Name<font color='#F08080'>*</font></string>
+    <string name="h_phone">Phone<font color='#F08080'>*</font></string>
+    <string name="h_dob">Date of Birth<font color='#F08080'>*</font></string>
+
+    <string name="t_gender">Gender<font color='#F08080'>*</font></string>
+    <string name="t_male">Male</string>
+    <string name="t_female">Female</string>
+
+    <string name="t_check">Health Issue (If applicable)</string>
+    <string name="t_check_desc">Check if anything you affected.</string>
+    <string name="c_work">Diabetes</string>
+    <string name="c_smoke">Cancer</string>
+    <string name="c_gym">Heart Disease</string>
 </resources>

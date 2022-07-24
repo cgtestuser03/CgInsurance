@@ -9,6 +9,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
 import com.capg.insurance.R
+import com.capg.insurance.databinding.FragmentHomeBinding
 import com.capg.insurance.databinding.FragmentListBinding
 import com.capg.insurance.ui.adapter.InsuranceAdapter
 import com.capg.insurance.ui.viewmodel.InsuranceViewModel
@@ -16,9 +17,9 @@ import com.capg.insurance.ui.viewmodel.InsuranceViewModel
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
  */
-class ListFragment : Fragment() {
+class HomeFragment : Fragment() {
 
-    private var _binding: FragmentListBinding? = null
+    private var _binding: FragmentHomeBinding? = null
     private var viewModel: InsuranceViewModel? = null
     private var adapter: InsuranceAdapter? = null
 
@@ -45,7 +46,7 @@ class ListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentListBinding.inflate(inflater, container, false)
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
 
     }
@@ -54,7 +55,7 @@ class ListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonNext.setOnClickListener {
-
+            findNavController().navigate(R.id.action_HomeFragment_to_NewFormFragment)
         }
     }
 
