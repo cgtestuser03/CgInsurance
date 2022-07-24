@@ -12,17 +12,17 @@
         tools:layout="@layout/fragment_login">
 
         <action
-            android:id="@+id/action_LoginFragment_to_ListFragment"
-            app:destination="@id/ListFragment" />
+            android:id="@+id/action_LoginFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
     </fragment>
     <fragment
-        android:id="@+id/ListFragment"
-        android:name="com.capg.insurance.ui.view.ListFragment"
-        android:label="@string/list_fragment_label"
+        android:id="@+id/HomeFragment"
+        android:name="com.capg.insurance.ui.view.HomeFragment"
+        android:label="@string/home_fragment_label"
         tools:layout="@layout/fragment_list">
 
         <action
-            android:id="@+id/action_ListFragment_to_NewFormFragment"
+            android:id="@+id/action_HomeFragment_to_NewFormFragment"
             app:destination="@id/NewFormFragment" />
     </fragment>
     <fragment
@@ -34,5 +34,11 @@
         <action
             android:id="@+id/action_NewFormFragment_to_ListFragment"
             app:destination="@id/ListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ListFragment"
+        android:name="com.capg.insurance.ui.view.ListFragment"
+        android:label="@string/list_fragment_label"
+        tools:layout="@layout/fragment_new">
     </fragment>
 </navigation>

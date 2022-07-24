@@ -1,4 +1,4 @@
 package com.capg.insurance.data.model
 
-class InsuranceModel {
-}
+class InsuranceModel (val image:Int,
+                      val insuranceCategoryName: String)
